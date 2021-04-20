@@ -1,6 +1,10 @@
 import { HasFormatter } from "../interfaces/HasFormatter.js";
 
+// Export the HTML template for the list items
+
 export class ListTemplate {
+
+  // The HTML lu will be the container
   constructor(private container: HTMLUListElement) {}
 
   render(item: HasFormatter, heading: string, pos: 'start' | 'end') {
